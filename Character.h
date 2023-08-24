@@ -14,7 +14,7 @@ private:
 public:
   Character(string name, int health, int attackPower, int defense);
 
-  void attack(Character &target);
+  virtual void attack(Character &target);
 
   void receiveDamage(int damage);
 
@@ -23,6 +23,8 @@ public:
   string getName() { return name; }
   int getHeath() { return health; }
   int getAttackPower() { return attackPower; }
+  void setAttackPower(int newAttackPower);
   int getDefense() { return defense; }
   void setHealth(int newHealth);
+  void setDefense(int newDefense);
 };

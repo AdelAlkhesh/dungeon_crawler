@@ -1,5 +1,4 @@
 #include "Character.h"
-
 #include <iostream>
 #include <stdexcept>
 #include <string>
@@ -12,6 +11,18 @@ Character::Character(string name, int health, int attackPower, int defense)
 void Character::setHealth(int newHealth) {
   if (newHealth >= 0) {
     health = newHealth;
+  }
+}
+
+void Character::setDefense(int newDefense) {
+  if (newDefense >= 0) {
+    defense = newDefense;
+  }
+}
+
+void Character::setAttackPower(int newAttackPower) {
+  if (newAttackPower >= 0) {
+    attackPower = newAttackPower;
   }
 }
 
